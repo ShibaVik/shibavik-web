@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Tech theme colors
+				'tech-navy': '#0B1426',
+				'tech-dark': '#1a2332',
+				'tech-cyan': '#00D4FF',
+				'tech-electric': '#4ECDC4',
+				'tech-purple': '#6C5CE7'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +91,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				pulseGlow: {
+					'0%': { boxShadow: '0 0 20px rgba(0, 212, 255, 0.3)' },
+					'100%': { boxShadow: '0 0 30px rgba(0, 212, 255, 0.6)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-glow': 'pulseGlow 2s ease-in-out infinite alternate'
 			}
 		}
 	},
