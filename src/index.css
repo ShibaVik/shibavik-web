@@ -117,6 +117,14 @@
   .pulse-glow {
     animation: pulseGlow 2s ease-in-out infinite alternate;
   }
+  
+  .slow-spin {
+    animation: slowSpin 20s linear infinite;
+  }
+  
+  .reverse-spin {
+    animation: slowSpin 15s linear infinite reverse;
+  }
 }
 
 @keyframes float {
@@ -127,4 +135,9 @@
 @keyframes pulseGlow {
   0% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
   100% { box-shadow: 0 0 30px rgba(0, 212, 255, 0.6); }
+}
+
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
