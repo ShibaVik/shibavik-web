@@ -1,10 +1,9 @@
-
 import React from 'react';
-import { Twitter, MessageCircle, Send, Linkedin, Youtube, Globe } from 'lucide-react';
+import { X, MessageCircle, Send, Linkedin, Youtube, Globe } from 'lucide-react';
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: <Twitter className="w-5 h-5" />, url: "https://twitter.com/ShibaVik", label: "Twitter" },
+    { icon: <X className="w-5 h-5" />, url: "https://twitter.com/ShibaVik", label: "X (Twitter)" },
     { icon: <MessageCircle className="w-5 h-5" />, url: "https://discord.gg/ShibaVik", label: "Discord" },
     { icon: <Send className="w-5 h-5" />, url: "https://t.me/ShibaVik", label: "Telegram" },
     { icon: <Linkedin className="w-5 h-5" />, url: "https://linkedin.com/company/shibavik", label: "LinkedIn" },
